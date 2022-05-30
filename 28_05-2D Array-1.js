@@ -95,6 +95,12 @@ function waveMatrix(mat){
            [3,3,3,4]] 
 //3*4
 //4*3
+
+/*[[1,2,3],
+   [1,2,3],
+  [1,2,3]
+  [4,4,4]]*/
+
 [
   [],
   [],
@@ -162,7 +168,20 @@ let one = [
   
   
   
-  
+let mat=[[1,2,3],
+        [4,5,6],
+        [7,8,9]]
+let n=3;
+function rotate180Mat(mat){
+	  for(let i=n-1;i>=0;i--){
+      for(let j=n-1;j>=0;j--){
+        console.log(mat[i][j])
+      }
+    }
+}
+
+rotate180Mat(mat);
+
   
   
   
