@@ -1,17 +1,20 @@
 function bubbleSort(arr){
-    let n = arr.length; // 5
-    for(let i=0;i<n-1;i++){ 
-        let count = 0;
+    let n = arr.length; // length of array
+    for(let i=0;i<n-1;i++){  //n-1 iteratuion
+        
         var isswapped = false;
+
+        //comparing the adjacent elements 
         for(let j = 0;j < n-1-i;j++){ 
-            count++;
+            
+            //if current elem is smaller and elem bigger we do need to swap 
             if(arr[j] > arr[j+1]){
-                //swap
+                //swap element at jth and j+1 index 
                 [arr[j],arr[j+1]] = [arr[j+1],arr[j]];
                 isswapped=true;
             }
         }
-        console.log(count)
+        
         if(!isswapped){
             break;
         }
